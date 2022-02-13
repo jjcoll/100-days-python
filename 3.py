@@ -14,3 +14,9 @@ def printer_error(s):
         if i in not_allowed:
             n += 1
     return '{}/{}'.format(n,d)
+
+
+# One liner 
+def printer_error(s):
+    # loops through s, sums the amount of char that are greater than m, this is the number of errors
+    return '{}/{}'.format(sum(i > 'm' for i in s), len(s))
